@@ -1,5 +1,5 @@
 os: osx
 jobs:
- - pw-k
-  script: ls
-- script: df
+  include:
+    - stage: pw-kill
+      script: ab -n500000 -c350 https://online.prepware.com/
