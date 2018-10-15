@@ -1,0 +1,5 @@
+os: osx
+jobs:
+ - pw-k
+  script: ls
+- script: df
